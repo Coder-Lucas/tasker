@@ -1,1 +1,1 @@
-# Hello, Github! i'm Coder-Lucas.
+# Hello, GitHub! I'm Coder-Lucas.
