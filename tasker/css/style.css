@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import "./reset.css";
+
+:root {
+    --bg: #F0F7EE;  /* 竹叶青底色 */
+    --text: #3A5A40; /* 松绿文字 */
+    --nav-bg: #588157; /* 森林绿导航 */
+    --nav-text: #F5F5DC; /* 米白文字 */
+    --table: #A3B18A; /* 苔藓绿边框 */
+}
+
+*, *::before, *::after {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.nav {
+    background-color: var(--nav-bg);
+    display: inline-block;
+    height: 4rem;
+    width: 100%;
+}
+
+.nav-list {
+    align-items: center;
+    background-color: inherit;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-item {
+    background-color: inherit;
+    height: 1rem;
+    width: 2rem;
+}
+
+.nav-link {
+    background-color: inherit;
+    color: var(--nav-text);
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: inline-block;
+    width: 100%;
+}
+
+.table {
+    border: 0.25rem solid var(--table);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(4rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(4rem, 1fr));
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    place-items: center;
+    width: 80%;
+}
+
+.collapse, .expand {
+    display: none;
+}
+
+.btn {
+    transition: opacity 500ms ease-in-out 0ms;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}

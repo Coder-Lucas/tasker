@@ -1,0 +1,13 @@
+@charset "UTF-8";
+*, *::before, *::after {
+    appearance: none;
+    border: none;
+    box-sizing: border-box;
+    font: normal normal normal 16px / 1.5 Arial, sans-serif;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    outline-offset: 0;
+    padding: 0;
+    text-decoration: none;
+}

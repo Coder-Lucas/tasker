@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="一个极简的待办事项管理器" name="description">
+        <meta content="待办事项管理器" name="keywords">
+        <title>待办事项管理器-首页</title>
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <link href="./images/favicon-index.ico" rel="icon" type="image/x-icon">
+        <script defer src="js/main.js"></script>
+    </head>
+    <body class="index">
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <!-- 前往index.html -->
+                <li class="nav-item">
+                    <a class="nav-link btn" href="./index.html">首页</a>
+                </li>
+                <!-- 前往setting.html -->
+                <li class="nav-item">
+                    <a class="nav-link btn" href="./settings.html">设置</a>
+                </li>
+                <!-- 前往achvs.html -->
+                <li class="nav-item">
+                    <a class="nav-link btn" href="./achvs.html">成就</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 主要内容 -->
+        <main class="main">
+            <!-- 标题 -->
+            <h1>待办事项管理器</h1>
+            <!-- 添加事项 -->
+            <button class="add btn" type="button">添加</button>
+            <!-- 删除事项 -->
+            <button class="remove btn" type="button">删除</button>
+            <!-- 表格 -->
+            <div class="table">
+                <!-- 表头 -->
+                <div class="table-header cell">名称</div>
+                <div class="table-header cell">开始时间</div>
+                <div class="table-header cell">截止时间</div>
+                <div class="table-header cell">事项</div>
+                <div class="table-header cell">状态</div>
+                <!-- 表体 -->
+                <!-- 表尾 -->
+                <div class="table-footer cell">
+                    <button class="expand btn">展开</button>
+                </div>
+                <div class="table-footer cell">
+                    <button class="collapse btn">收起</button>
+                </div>
+            </div>
+<!--            <table class="table">-->
+<!--                &lt;!&ndash; 标题 &ndash;&gt;-->
+<!--                <caption class="table-cap">-->
+<!--                    &lt;!&ndash; 表格标题 &ndash;&gt;-->
+<!--                    <h1>待办事项管理器</h1>-->
+<!--                    &lt;!&ndash; 添加事项 &ndash;&gt;-->
+<!--                    <button class="add btn" type="button">添加</button>-->
+<!--                    &lt;!&ndash; 删除事项 &ndash;&gt;-->
+<!--                    <button class="remove btn" type="button">删除</button>-->
+<!--                </caption>-->
+<!--                &lt;!&ndash; 表头 &ndash;&gt;-->
+<!--                <thead class="table-head">-->
+<!--                    <tr class="table-line">-->
+<!--                        <th>名称</th>-->
+<!--                        <th>开始时间</th>-->
+<!--                        <th>截止时间</th>-->
+<!--                        <th>事项</th>-->
+<!--                        <th>状态</th>-->
+<!--                    </tr>-->
+<!--                </thead>-->
+<!--                &lt;!&ndash; 表体 &ndash;&gt;-->
+<!--                <tbody class="table-body">-->
+<!--                    <tr class="table-line">-->
+<!--                        <td>测试事项</td>-->
+<!--                        <td>2025/10/22 00:00:00</td>-->
+<!--                        <td>2026/01/01 00:00:00</td>-->
+<!--                        <td>测试事项</td>-->
+<!--                        <td>未完成</td>-->
+<!--                    </tr>-->
+<!--                </tbody>-->
+<!--                &lt;!&ndash; 表尾 &ndash;&gt;-->
+<!--                <tfoot class="table-foot">-->
+<!--                    <tr class="table-line">-->
+<!--                        <td colspan="5">-->
+<!--                            <button class="btn">展开更多</button>-->
+<!--                        </td>-->
+<!--                    </tr>-->
+<!--                </tfoot>-->
+<!--            </table>-->
+        </main>
+    </body>
+</html>
