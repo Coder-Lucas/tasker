@@ -2,11 +2,11 @@
 @import "./reset.css";
 
 :root {
-    --bg: #F0F7EE;  /* 竹叶青底色 */
-    --text: #3A5A40; /* 松绿文字 */
-    --nav-bg: #588157; /* 森林绿导航 */
-    --nav-text: #F5F5DC; /* 米白文字 */
-    --table: #A3B18A; /* 苔藓绿边框 */
+    --bg: rgba(255, 255, 255, 1);
+    --text: rgba(0, 0, 0, 1);
+    --nav-bg: rgba(0, 0, 0, 1);
+    --nav-text: rgba(255, 255, 255, 1);
+    --table: rgba(0, 0, 0, 1);
 }
 
 *, *::before, *::after {
