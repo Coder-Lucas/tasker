@@ -1,0 +1,23 @@
+{
+    "name": "tasker",
+    "short_name": "tasker",
+    "start_url": "/",
+    "scope": "/",
+    "lang": "zh-cmn-Hans-CN",
+    "description": "一个游戏化的待办事项管理器，可安装PWA，助你无痛养成好习惯！",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000000",
+    "icon": [
+        {
+            "src": "./images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

@@ -2,11 +2,11 @@
 @import "./reset.css";
 
 :root {
-    --bg: rgba(255, 255, 255, 1);
-    --text: rgba(0, 0, 0, 1);
-    --nav-bg: rgba(0, 0, 0, 1);
-    --nav-text: rgba(255, 255, 255, 1);
-    --table: rgba(0, 0, 0, 1);
+    --bg: #FFFFFF;
+    --text: #000000;
+    --nav-bg: #000000;
+    --nav-text: #FFFFFF;
+    --table: #000000;
 }
 
 *, *::before, *::after {
@@ -45,7 +45,6 @@
 
 .main {
     display: inline-block;
-    width: 100%;
 }
 
 .table {
