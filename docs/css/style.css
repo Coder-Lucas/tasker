@@ -45,6 +45,7 @@
 
 .main {
     display: inline-block;
+    width: 100%;
 }
 
 .table {
@@ -53,7 +54,6 @@
     display: grid;
     grid-template-columns: repeat(5, minmax(4rem, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(4rem, 1fr));
-    height: 100%;
     margin: 0 auto;
     border-radius: 0.5rem;
     place-items: center;
