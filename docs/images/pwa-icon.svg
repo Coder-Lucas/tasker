@@ -1,0 +1,50 @@
+<!-- PWA应用图标 -->
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    width="200"
+    height="200"
+    viewBox="0 0 200 200"
+    role="img"
+>
+    <defs>
+        <linearGradient
+            id="gradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+        >
+            <stop
+                offset="0%"
+                stop-color="#00FF00"
+            >
+            </stop>
+            <stop
+                offset="100%"
+                stop-color="#004000"
+            >
+            </stop>
+        </linearGradient>
+    </defs>
+    <circle
+        cx="100"
+        cy="100"
+        r="80"
+        fill="none"
+        stroke="url(#gradient)"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+    </circle>
+    <path
+        d="M 50 100 L 100 140 L 150 60"
+        fill="none"
+        stroke="url(#gradient)"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+    </path>
+</svg>

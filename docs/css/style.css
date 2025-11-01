@@ -15,7 +15,7 @@
 }
 
 .nav {
-    background-color: var(--grey);
+    background-color: var(--dark-grey);
     display: inline-block;
     height: 4rem;
     width: 100%;
@@ -62,18 +62,6 @@
 
 .collapse, .expand {
     display: none;
-}
-
-.credit {
-
-}
-
-.text {
-
-}
-
-.license {
-    white-space: pre-line;
 }
 
 .btn {
