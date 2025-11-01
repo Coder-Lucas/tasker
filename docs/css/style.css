@@ -2,20 +2,20 @@
 @import "./reset.css";
 
 :root {
-    --bg: #FFFFFF;
-    --text: #000000;
-    --nav-bg: #000000;
-    --nav-text: #FFFFFF;
-    --table: #000000;
+    --white: #FAFAFA;
+    --light-grey: #C0C0C0;
+    --grey: #808080;
+    --dark-grey: #333333;
+    --black: #111111;
 }
 
 *, *::before, *::after {
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--white);
+    color: var(--dark-grey);
 }
 
 .nav {
-    background-color: var(--nav-bg);
+    background-color: var(--grey);
     display: inline-block;
     height: 4rem;
     width: 100%;
@@ -38,7 +38,7 @@
 
 .nav-link {
     background-color: inherit;
-    color: var(--nav-text);
+    color: var(--white);
     height: 100%;
     width: 100%;
 }
@@ -49,7 +49,7 @@
 }
 
 .table {
-    border: 0.25rem solid var(--table);
+    border: 0.25rem solid var(--black);
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(5, minmax(4rem, 1fr));
@@ -62,6 +62,18 @@
 
 .collapse, .expand {
     display: none;
+}
+
+.credit {
+
+}
+
+.text {
+
+}
+
+.license {
+    white-space: pre-line;
 }
 
 .btn {
