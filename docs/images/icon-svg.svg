@@ -30,7 +30,7 @@
         d="M 180 100 A 80 80 0 1 1 20 100 A 80 80 0 1 1 180 100 M 50 100 L 100 150 L 150 60"
         fill="none"
         stroke="url(#gradient)"
-        stroke-width="8"
+        stroke-width="12"
         stroke-linecap="round"
         stroke-linejoin="round"
     />
