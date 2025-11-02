@@ -14,7 +14,7 @@
     color: var(--dark-grey);
 }
 
-.del *, .del *::before, .del *::after {
+del *, del *::before, del *::after {
     display: none !important;
 }
 
