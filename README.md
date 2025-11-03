@@ -1,1 +1,1 @@
-# Hello, GitHub! I'm Coder-Lucas.
+# 一个游戏化的待办事项管理器，可安装PWA，助你无痛养成好习惯！（测试版）
