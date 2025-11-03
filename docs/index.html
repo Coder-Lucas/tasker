@@ -6,9 +6,21 @@
         <meta content="一个游戏化的待办事项管理器，可安装PWA，助你无痛养成好习惯！" name="description">
         <title>tasker</title>
         <link href="./css/style.css" rel="stylesheet" type="text/css">
-        <link href="./images/icon-svg.svg" rel="icon" type="image/svg">
+        <link href="./images/icon-svg.svg" rel="icon" type="image/svg" sizes="any">
+        <link href="./images/icon-64x64.png" rel="icon" type="image/png" sizes="64x64">
+        <link href="./images/icon-72x72.png" rel="icon" type="image/png" sizes="72x72">
+        <link href="./images/icon-96x96.png" rel="icon" type="image/png" sizes="96x96">
+        <link href="./images/icon-128x128.png" rel="icon" type="image/png" sizes="128x128">
+        <link href="./images/icon-144x144.png" rel="icon" type="image/png" sizes="144x144">
+        <link href="./images/icon-152x152.png" rel="icon" type="image/png" sizes="152x152">
+        <link href="./images/icon-192x192.png" rel="icon" type="image/png" sizes="192x192">
+        <link href="./images/icon-256x256.png" rel="icon" type="image/png" sizes="256x256">
+        <link href="./images/icon-384x384.png" rel="icon" type="image/png" sizes="384x384">
+        <link href="./images/icon-512x512.png" rel="icon" type="image/png" sizes="512x512">
+        <link href="./images/icon-1024x1024.png" rel="icon" type="image/png" sizes="1024x1024">
         <link href="./manifest.json" rel="manifest" type="application/manifest">
         <script defer src="./js/main.js"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="index">
         <!-- 导航栏 -->
@@ -57,47 +69,6 @@
                     <button class="collapse btn">收起</button>
                 </div>
             </div>
-            <del>
-                <table class="table">
-                    <!-- 标题 -->
-                    <caption class="table-cap">
-                        <!-- 表格标题 -->
-                        <h1>待办事项管理器</h1>
-                        <!-- 添加事项 -->
-                        <button class="add btn" type="button">添加</button>
-                        <!-- 删除事项 -->
-                        <button class="remove btn" type="button">删除</button>
-                    </caption>
-                    <!-- 表头 -->
-                    <thead class="table-head">
-                        <tr class="table-line">
-                            <th>名称</th>
-                            <th>开始时间</th>
-                            <th>截止时间</th>
-                            <th>事项</th>
-                            <th>状态</th>
-                        </tr>
-                    </thead>
-                    <!-- 表体 -->
-                    <tbody class="table-body">
-                        <tr class="table-line">
-                            <td>测试事项</td>
-                            <td>2025/10/22 00:00:00</td>
-                            <td>2026/01/01 00:00:00</td>
-                            <td>测试事项</td>
-                            <td>未完成</td>
-                        </tr>
-                    </tbody>
-                    <!-- 表尾 -->
-                    <tfoot class="table-foot">
-                        <tr class="table-line">
-                            <td colspan="5">
-                                <button class="btn">展开更多</button>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </del>
         </main>
     </body>
 </html>
