@@ -8,7 +8,7 @@
     "display": "standalone",
     "background_color": "#FAFAFA",
     "theme_color": "#111111",
-    "icon": [
+    "icons": [
         {
             "src": "./images/icon-svg.svg",
             "sizes": "any",
