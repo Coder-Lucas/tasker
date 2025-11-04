@@ -26,8 +26,8 @@
                 return void 0;
             };
             document.querySelector(".remove").onclick = () => {
-            alert("remove按钮编写中");
-            return void 0;
+                alert("remove按钮编写中");
+                return void 0;
             };
             break;
         case "settings":
