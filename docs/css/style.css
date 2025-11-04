@@ -2,11 +2,11 @@
 @import "./reset.css";
 
 :root {
-    --white: #FAFAFA;
-    --light-grey: #C0C0C0;
-    --grey: #808080;
-    --dark-grey: #333333;
     --black: #111111;
+    --grey: #808080;
+    --white: #FAFAFA;
+    --dark-grey: #333333;
+    --light-grey: #C0C0C0;
 }
 
 *, *::before, *::after {
@@ -54,12 +54,12 @@ del *, del *::before, del *::after {
 
 .table {
     border: 0.25rem solid var(--black);
-    overflow: hidden;
+    border-radius: 0.5rem;
     display: grid;
     grid-template-columns: repeat(5, minmax(4rem, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(4rem, 1fr));
     margin: 0 auto;
-    border-radius: 0.5rem;
+    overflow: hidden;
     place-items: center;
     width: 80%;
 }
