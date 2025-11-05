@@ -5,62 +5,67 @@ import runSettings from "./lib/settings.js";
 import runAchvs from "./lib/achvs.js";
 import runAbout from "./lib/about.js";
 
-(async () => {
-    try {
+(async () =>
+{
+    try
+    {
         console.info("开始注册SW");
-        if ("serviceWorker" in navigator) {
-            document.addEventListener("DOMContentLoaded", async () => {
+        if ("serviceWorker" in navigator)
+        {
+            document.addEventListener("DOMContentLoaded", async () =>
+            {
                 const registration = await navigator.serviceWorker.register(new URL("../sw.js", import.meta.url).toString(), {
                     scope: new URL("../", import.meta.url).toString(),
                     type: "module"
                 });
                 console.info("SW注册成功 PWA离线功能已可用");
-                registration.addEventListener("updatefound", async () => {
+                registration.addEventListener("updatefound", async () =>
+                {
                     console.info("检测到新版SW 正在下载");
                     const newSW = await registration.installing;
-                    newSW.addEventListener("statechange", () => {
-                        if (newSW.state === "installed" && navigator.serviceWorker.controller) {
+                    newSW.addEventListener("statechange", () =>
+                    {
+                        if (newSW.state === "installed" && navigator.serviceWorker.controller)
+                        {
                             console.info("新版SW下载完成");
-                            return void 0;
                         }
-                        return void 0;
                     });
-                    return void 0;
                 });
-                return void 0;
             });
-        } else {
+        } else
+        {
             console.error("该浏览器或设备暂不支持SW");
         }
-    } catch (error) {
+    } catch (error)
+    {
         console.error("SW注册失败 PWA离线功能不可用 ", error);
     }
     console.info("检测当前所在网页");
-    switch (document.body.className) {
+    switch (document.body.className)
+    {
         case "index":
-            Promise.resolve().then(() => {
+            Promise.resolve().then(() =>
+            {
                 runIndex();
-                return void 0;
             });
             break;
         case "settings":
-            Promise.resolve().then(() => {
+            Promise.resolve().then(() =>
+            {
                 runSettings();
-                return void 0;
             });
             break;
         case "achvs":
-            Promise.resolve().then(() => {
+            Promise.resolve().then(() =>
+            {
                 runAchvs();
-                return void 0;
             });
             break;
         case "about":
-            Promise.resolve().then(() => {
+            Promise.resolve().then(() =>
+            {
                 runAbout();
-                return void 0;
             });
             break;
     }
-    return void 0;
 })();
