@@ -1,31 +1,65 @@
 @charset "UTF-8";
 @import "./reset.css";
 
-:root {
-    --black: #111111;
-    --grey: #808080;
-    --white: #FAFAFA;
-    --dark-grey: #333333;
-    --light-grey: #C0C0C0;
+:root
+{
+    /* 24种均匀分布的色相 */
+    --hue-0: #ff0000;
+    --hue-15: #ff4000;
+    --hue-30: #ff8000;
+    --hue-45: #ffbf00;
+    --hue-60: #ffff00;
+    --hue-75: #bfff00;
+    --hue-90: #80ff00;
+    --hue-105: #40ff00;
+    --hue-120: #00ff00;
+    --hue-135: #00ff40;
+    --hue-150: #00ff80;
+    --hue-165: #00ffbf;
+    --hue-180: #00ffff;
+    --hue-195: #00bfff;
+    --hue-210: #0080ff;
+    --hue-225: #0040ff;
+    --hue-240: #0000ff;
+    --hue-255: #4000ff;
+    --hue-270: #8000ff;
+    --hue-285: #bf00ff;
+    --hue-300: #ff00ff;
+    --hue-315: #ff00bf;
+    --hue-330: #ff0080;
+    --hue-345: #ff0040;
+    /* 8种均匀分布的灰度 */
+    --gray-100: #ffffff;
+    --gray-85: #d9d9d9;
+    --gray-71: #b5b5b5;
+    --gray-57: #919191;
+    --gray-43: #6e6e6e;
+    --gray-29: #4a4a4a;
+    --gray-14: #242424;
+    --gray-0: #000000;
 }
 
-*, *::before, *::after {
-    background-color: var(--white);
-    color: var(--dark-grey);
+*, *::before, *::after
+{
+    background-color: var(--gray-85);
+    color: var(--gray-14);
 }
 
-del *, del *::before, del *::after {
+del *, del *::before, del *::after
+{
     display: none !important;
 }
 
-.nav {
-    background-color: var(--dark-grey);
+.nav
+{
+    background-color: var(--gray-14);
     display: inline-block;
     height: 4rem;
     width: 100%;
 }
 
-.nav-list {
+.nav-list
+{
     align-items: center;
     background-color: inherit;
     display: flex;
@@ -34,27 +68,29 @@ del *, del *::before, del *::after {
     width: 100%;
 }
 
-.nav-item {
+.nav-item
+{
     background-color: inherit;
     height: 1rem;
     width: 2rem;
 }
 
-.nav-link {
+.nav-link
+{
     background-color: inherit;
-    color: var(--white);
+    color: var(--gray-85);
     height: 100%;
     width: 100%;
 }
 
-.main {
+.main
+{
     display: inline-block;
     width: 100%;
 }
 
-.table {
-    border: 0.25rem solid var(--black);
-    border-radius: 0.5rem;
+.table
+{
     display: grid;
     grid-template-columns: repeat(5, minmax(4rem, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(4rem, 1fr));
@@ -62,16 +98,20 @@ del *, del *::before, del *::after {
     overflow: hidden;
     place-items: center;
     width: 80%;
+    box-shadow: 16px 16px 16px 16px rgba(0, 0, 0, .5);
 }
 
-.collapse, .expand {
+.collapse, .expand
+{
     display: none;
 }
 
-.btn {
+.btn
+{
     transition: opacity 500ms ease-in-out 0ms;
 }
 
-.btn:hover {
+.btn:hover
+{
     opacity: 0.5;
 }

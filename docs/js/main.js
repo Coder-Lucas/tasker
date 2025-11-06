@@ -14,7 +14,7 @@ import runAbout from "./lib/about.js";
         {
             document.addEventListener("DOMContentLoaded", async () =>
             {
-                const registration = await navigator.serviceWorker.register(new URL("../sw.js", import.meta.url).toString(), {
+                const registration = await navigator.serviceWorker.register(new URL("../sw.js", import.meta.url).href, {
                     scope: new URL("../", import.meta.url).toString(),
                     type: "module"
                 });
@@ -40,32 +40,38 @@ import runAbout from "./lib/about.js";
     {
         console.error("SW注册失败 PWA离线功能不可用 ", error);
     }
-    console.info("检测当前所在网页");
-    switch (document.body.className)
+    try
     {
-        case "index":
-            Promise.resolve().then(() =>
-            {
-                runIndex();
-            });
-            break;
-        case "settings":
-            Promise.resolve().then(() =>
-            {
-                runSettings();
-            });
-            break;
-        case "achvs":
-            Promise.resolve().then(() =>
-            {
-                runAchvs();
-            });
-            break;
-        case "about":
-            Promise.resolve().then(() =>
-            {
-                runAbout();
-            });
-            break;
+        console.info("检测当前所在网页");
+        switch (document.body.className)
+        {
+            case "index":
+                Promise.resolve().then(() =>
+                {
+                    runIndex();
+                });
+                break;
+            case "settings":
+                Promise.resolve().then(() =>
+                {
+                    runSettings();
+                });
+                break;
+            case "achvs":
+                Promise.resolve().then(() =>
+                {
+                    runAchvs();
+                });
+                break;
+            case "about":
+                Promise.resolve().then(() =>
+                {
+                    runAbout();
+                });
+                break;
+        }
+    } catch (error)
+    {
+        console.error("出现未知错误 ", error);
     }
 })();
