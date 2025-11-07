@@ -5,11 +5,7 @@
     appearance: none;
     border: none;
     box-sizing: border-box;
-    font: normal normal normal 16px / 1.5
-    system-ui, -apple-system, BlinkMacSystemFont,
-    Helvetica, Roboto, Arial,
-    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-    sans-serif;
+    font: normal normal normal 16px / 1.5 system-ui, -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     list-style: none;
     margin: 0;
     outline: none;

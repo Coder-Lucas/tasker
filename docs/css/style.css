@@ -55,6 +55,7 @@ del *, del *::before, del *::after
     background-color: var(--gray-14);
     display: inline-block;
     height: 4rem;
+    text-align: center;
     width: 100%;
 }
 
@@ -71,7 +72,8 @@ del *, del *::before, del *::after
 .nav-item
 {
     background-color: inherit;
-    height: 1rem;
+    display: inline-block;
+    height: 2rem;
     width: 2rem;
 }
 
@@ -79,6 +81,7 @@ del *, del *::before, del *::after
 {
     background-color: inherit;
     color: var(--gray-85);
+    display: inline-block;
     height: 100%;
     width: 100%;
 }
@@ -86,19 +89,38 @@ del *, del *::before, del *::after
 .main
 {
     display: inline-block;
+    height: auto;
+    width: 100%;
+}
+
+.title
+{
+    font-size: 2rem;
+    height: 4rem;
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    height: 4rem;
+    margin: 1rem auto;
+    text-align: center;
     width: 100%;
 }
 
 .table
 {
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, .5);
     display: grid;
     grid-template-columns: repeat(5, minmax(4rem, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(4rem, 1fr));
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     place-items: center;
     width: 80%;
-    box-shadow: 16px 16px 16px 16px rgba(0, 0, 0, .5);
 }
 
 .collapse, .expand
