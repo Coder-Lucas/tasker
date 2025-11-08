@@ -4,6 +4,7 @@ import runIndex from "./lib/index.js";
 import runSettings from "./lib/settings.js";
 import runAchvs from "./lib/achvs.js";
 import runAbout from "./lib/about.js";
+import runGeneral from "./lib/general.js";
 
 (async () =>
 {
@@ -39,6 +40,16 @@ import runAbout from "./lib/about.js";
     } catch (error)
     {
         console.error("SW注册失败 PWA离线功能不可用 ", error);
+    }
+    try
+    {
+        Promise.resolve().then(() =>
+        {
+            runGeneral();
+        });
+    } catch (error)
+    {
+        console.error("出现未知错误 ", error);
     }
     try
     {

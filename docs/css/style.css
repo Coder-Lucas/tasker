@@ -74,15 +74,18 @@ del *, del *::before, del *::after
     background-color: inherit;
     display: inline-block;
     height: 2rem;
+    justify-content: center;
     width: 2rem;
 }
 
 .nav-link
 {
+    align-items: center;
     background-color: inherit;
     color: var(--gray-85);
-    display: inline-block;
+    display: flex;
     height: 100%;
+    justify-content: center;
     width: 100%;
 }
 
@@ -95,6 +98,7 @@ del *, del *::before, del *::after
 
 .title
 {
+    display: inline-block;
     font-size: 2rem;
     height: 4rem;
     margin: 1rem auto;
@@ -102,7 +106,9 @@ del *, del *::before, del *::after
     width: 100%;
 }
 
-.subtitle {
+.subtitle
+{
+    display: inline-block;
     font-size: 1.5rem;
     height: 4rem;
     margin: 1rem auto;
@@ -115,12 +121,24 @@ del *, del *::before, del *::after
     box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, .5);
     display: grid;
     grid-template-columns: repeat(5, minmax(4rem, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(4rem, 1fr));
+    grid-template-rows: repeat(5, minmax(4rem, 1fr));
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto;
     overflow: hidden;
     place-items: center;
     width: 80%;
+}
+
+.empty
+{
+    color: var(--gray-57);
+    display: grid;
+    font-size: 1.5rem;
+    grid-column: 1 / -1;
+    grid-row: 2 / -2;
+    height: 100%;
+    place-items: center;
+    width: 100%;
 }
 
 .collapse, .expand
@@ -135,5 +153,11 @@ del *, del *::before, del *::after
 
 .btn:hover
 {
+    cursor: pointer;
     opacity: 0.5;
+}
+
+.current:hover
+{
+    cursor: not-allowed;
 }
