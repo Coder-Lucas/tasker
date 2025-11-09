@@ -8,8 +8,8 @@
     "description": "一个游戏化的待办事项管理器，可安装PWA，助你无痛养成好习惯！",
     "display": "standalone",
     "orientation": "any",
-    "background_color": "#FAFAFA",
-    "theme_color": "#111111",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000000",
     "icons": [
         {
             "src": "./images/icon-svg.svg",
