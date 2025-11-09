@@ -1,10 +1,10 @@
 "use strict";
 
-import runIndex from "./lib/index.js";
-import runSettings from "./lib/settings.js";
-import runAchvs from "./lib/achvs.js";
-import runAbout from "./lib/about.js";
-import runGeneral from "./lib/general.js";
+import runIndex from "/js/lib/index.js";
+import runSettings from "/js/lib/settings.js";
+import runAchvs from "/js/lib/achvs.js";
+import runAbout from "/js/lib/about.js";
+import runGeneral from "/js/lib/general.js";
 
 (async () =>
 {
@@ -15,8 +15,8 @@ import runGeneral from "./lib/general.js";
         {
             document.addEventListener("DOMContentLoaded", async () =>
             {
-                const registration = await navigator.serviceWorker.register(new URL("../sw.js", import.meta.url).href, {
-                    scope: new URL("../", import.meta.url).toString(),
+                const registration = await navigator.serviceWorker.register("/sw.js", {
+                    scope: "/",
                     type: "module"
                 });
                 console.info("SW注册成功 PWA离线功能已可用");
