@@ -72,9 +72,10 @@ del *, del *::before, del *::after
 .nav-item
 {
     background-color: inherit;
-    display: inline-block;
-    height: 2rem;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    height: 2rem;
     width: 2rem;
 }
 
@@ -120,25 +121,64 @@ del *, del *::before, del *::after
 {
     box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, .5);
     display: grid;
-    grid-template-columns: repeat(5, minmax(4rem, 1fr));
-    grid-template-rows: repeat(5, minmax(4rem, 1fr));
+    grid-template-columns: repeat(1, minmax(4rem, 1fr));
+    grid-template-rows: repeat(5, minmax(8rem, 1fr));
     height: auto;
-    margin: 1rem auto;
-    overflow: hidden;
+    margin: 4rem auto;
     place-items: center;
     width: 80%;
+}
+
+.table-header
+{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(4rem, 1fr));
+    grid-template-rows: repeat(1, minmax(8rem, 1fr));
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.table-body
+{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(4rem, 1fr));
+    grid-template-rows: repeat(3, minmax(8rem, 1fr));
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    grid-row: 2 / span 3;
+}
+
+.table-footer
+{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(4rem, 1fr));
+    grid-template-rows: repeat(1, minmax(8rem, 1fr));
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.cell
+{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    border: thin solid var(--gray-57);
 }
 
 .empty
 {
     color: var(--gray-57);
-    display: grid;
     font-size: 1.5rem;
-    grid-column: 1 / -1;
-    grid-row: 2 / -2;
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 3;
     height: 100%;
-    place-items: center;
     width: 100%;
+    display: grid;
+    place-items: center;
 }
 
 .collapse, .expand
@@ -148,7 +188,7 @@ del *, del *::before, del *::after
 
 .btn
 {
-    transition: opacity 500ms ease-in-out 0ms;
+    transition: opacity 500ms linear 0ms;
 }
 
 .btn:hover
@@ -160,4 +200,9 @@ del *, del *::before, del *::after
 .current:hover
 {
     cursor: not-allowed;
+}
+
+.cell:hover
+{
+    background-color: var(--gray-71);
 }
