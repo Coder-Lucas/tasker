@@ -3,12 +3,16 @@
 export default () =>
 {
     console.info("执行index.html代码");
-    document.querySelector(".add").onclick = () =>
+    document.querySelector(".add").addEventListener("click", () =>
     {
-        alert("add按钮编写中");
-    };
-    document.querySelector(".remove").onclick = () =>
+        console.info("add按钮被点击");
+    });
+    document.querySelector(".remove").addEventListener("click", () =>
     {
-        alert("remove按钮编写中");
-    };
+        console.info("remove按钮被点击");
+    });
+    document.querySelector(".clear").addEventListener("click", () =>
+    {
+        console.info("clear按钮被点击");
+    });
 }

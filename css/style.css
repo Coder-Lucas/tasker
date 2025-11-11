@@ -1,43 +1,6 @@
 @charset "UTF-8";
 @import "/css/reset.css";
-
-:root
-{
-    /* 24种均匀分布的色相 */
-    --hue-0: #FF0000;
-    --hue-15: #FF4000;
-    --hue-30: #FF8000;
-    --hue-45: #FFBF00;
-    --hue-60: #FFFF00;
-    --hue-75: #BFFF00;
-    --hue-90: #80FF00;
-    --hue-105: #40FF00;
-    --hue-120: #00FF00;
-    --hue-135: #00FF40;
-    --hue-150: #00FF80;
-    --hue-165: #00FFBF;
-    --hue-180: #00FFFF;
-    --hue-195: #00BFFF;
-    --hue-210: #0080FF;
-    --hue-225: #0040FF;
-    --hue-240: #0000FF;
-    --hue-255: #4000FF;
-    --hue-270: #8000FF;
-    --hue-285: #BF00FF;
-    --hue-300: #FF00FF;
-    --hue-315: #FF00BF;
-    --hue-330: #FF0080;
-    --hue-345: #FF0040;
-    /* 8种均匀分布的灰度 */
-    --gray-0: #000000;
-    --gray-14: #242424;
-    --gray-29: #4A4A4A;
-    --gray-43: #6E6E6E;
-    --gray-57: #919191;
-    --gray-71: #B5B5B5;
-    --gray-85: #D9D9D9;
-    --gray-100: #FFFFFF;
-}
+@import "/css/color.css";
 
 *, *::before, *::after
 {
@@ -76,11 +39,11 @@ html
 
 .nav-item
 {
+    align-items: center;
     background-color: inherit;
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 2rem;
+    justify-content: center;
     width: 2rem;
 }
 
@@ -139,20 +102,20 @@ html
     display: grid;
     grid-template-columns: repeat(5, minmax(4rem, 1fr));
     grid-template-rows: repeat(1, minmax(8rem, 1fr));
-    place-items: center;
     height: 100%;
+    place-items: center;
     width: 100%;
 }
 
 .table-body
 {
     display: grid;
+    grid-row: 2 / span 3;
     grid-template-columns: repeat(5, minmax(4rem, 1fr));
     grid-template-rows: repeat(3, minmax(8rem, 1fr));
-    place-items: center;
     height: 100%;
+    place-items: center;
     width: 100%;
-    grid-row: 2 / span 3;
 }
 
 .table-footer
@@ -160,30 +123,30 @@ html
     display: grid;
     grid-template-columns: repeat(1, minmax(4rem, 1fr));
     grid-template-rows: repeat(1, minmax(8rem, 1fr));
-    place-items: center;
     height: 100%;
+    place-items: center;
     width: 100%;
 }
 
 .cell
 {
+    border: 1px solid var(--gray-57);
     display: grid;
     height: 100%;
-    width: 100%;
     place-items: center;
-    border: 1px solid var(--gray-57);
+    width: 100%;
 }
 
 .empty
 {
     color: var(--gray-57);
+    display: grid;
     font-size: 1.5rem;
     grid-column: 1 / span 5;
     grid-row: 1 / span 3;
     height: 100%;
-    width: 100%;
-    display: grid;
     place-items: center;
+    width: 100%;
 }
 
 .collapse, .expand
@@ -194,34 +157,34 @@ html
 .acks, .tech-stack, .version
 {
     display: inline-block;
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .ack-content, .tech-stack-content, .version-content
 {
-    white-space: pre-line;
     display: inline-block;
-    width: 100%;
     height: auto;
-    text-align: left;
     margin-left: 16px;
+    text-align: left;
+    white-space: pre-line;
+    width: 100%;
 }
 
 .divider
 {
     background-color: var(--gray-57);
     height: 1px;
-    width: 40%;
     margin: 32px 0;
+    width: 40%;
 }
 
 .outlink
 {
-    display: inline-block;
-    width: auto;
-    height: auto;
     color: var(--hue-210);
+    display: inline-block;
+    height: auto;
+    width: auto;
 }
 
 .btn
