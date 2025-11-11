@@ -191,14 +191,14 @@ html
     display: none;
 }
 
-.acks, .tech-stack
+.acks, .tech-stack, .version
 {
     display: inline-block;
     width: 100%;
     height: auto;
 }
 
-.ack-content, .tech-stack-content
+.ack-content, .tech-stack-content, .version-content
 {
     white-space: pre-line;
     display: inline-block;
