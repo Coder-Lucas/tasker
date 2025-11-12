@@ -159,24 +159,8 @@ html
     display: inline-block;
     height: auto;
     width: 100%;
-}
-
-.ack-content, .tech-stack-content, .version-content
-{
-    display: inline-block;
-    height: auto;
-    margin-left: 16px;
-    text-align: left;
-    white-space: pre-line;
-    width: 100%;
-}
-
-.divider
-{
-    background-color: var(--gray-57);
-    height: 1px;
-    margin: 32px 0;
-    width: 40%;
+    text-align: center;
+    margin: 16px auto;
 }
 
 .outlink
