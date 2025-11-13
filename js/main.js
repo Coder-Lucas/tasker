@@ -80,6 +80,9 @@ import runGeneral from "/js/lib/general.js";
                     runAbout();
                 });
                 break;
+            case "404":
+                console.error("页面未找到");
+                break;
         }
     } catch (error)
     {

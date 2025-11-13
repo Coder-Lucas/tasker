@@ -1,4 +1,11 @@
 [build]
     command = "echo 'No build command needed.'"
+    base = "/"
     publish = "/"
-    functions = "/functions"
+
+[functions]
+    directory = "/functions"
+
+[dev]
+    targetPort = 18888
+    autoLaunch = true

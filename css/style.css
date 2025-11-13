@@ -159,7 +159,6 @@ html
     display: inline-block;
     height: auto;
     width: 100%;
-    text-align: center;
     margin: 16px auto;
 }
 
@@ -169,6 +168,14 @@ html
     display: inline-block;
     height: auto;
     width: auto;
+}
+
+.text, .tip
+{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 .btn
