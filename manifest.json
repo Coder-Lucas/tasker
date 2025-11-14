@@ -1,6 +1,6 @@
 {
-    "name": "tasker",
-    "short_name": "tasker",
+    "name": "task-quest",
+    "short_name": "task-quest",
     "id": "/",
     "start_url": "/",
     "scope": "/",

@@ -6,47 +6,11 @@ import runAchvs from "/js/lib/achvs.js";
 import runAbout from "/js/lib/about.js";
 import runGeneral from "/js/lib/general.js";
 
-(async () =>
+(() =>
 {
     try
     {
-        console.info("开始注册SW");
-        if ("serviceWorker" in navigator)
-        {
-            document.addEventListener("DOMContentLoaded", async () =>
-            {
-                const registration = await navigator.serviceWorker.register("/sw.js", {
-                    scope: "/",
-                    type: "module"
-                });
-                console.info("SW注册成功 PWA离线功能已可用");
-                registration.addEventListener("updatefound", async () =>
-                {
-                    console.info("检测到新版SW 正在下载");
-                    const newSW = await registration.installing;
-                    newSW.addEventListener("statechange", () =>
-                    {
-                        if (newSW.state === "installed" && navigator.serviceWorker.controller)
-                        {
-                            console.info("新版SW下载完成");
-                        }
-                    });
-                });
-            });
-        } else
-        {
-            console.error("该浏览器或设备暂不支持SW");
-        }
-    } catch (error)
-    {
-        console.error("SW注册失败 PWA离线功能不可用 ", error);
-    }
-    try
-    {
-        Promise.resolve().then(() =>
-        {
-            runGeneral();
-        });
+        runGeneral()
     } catch (error)
     {
         console.error("出现未知错误 ", error);
@@ -57,31 +21,16 @@ import runGeneral from "/js/lib/general.js";
         switch (document.body.className)
         {
             case "index":
-                Promise.resolve().then(() =>
-                {
-                    runIndex();
-                });
+                runIndex();
                 break;
             case "settings":
-                Promise.resolve().then(() =>
-                {
-                    runSettings();
-                });
+                runSettings();
                 break;
             case "achvs":
-                Promise.resolve().then(() =>
-                {
-                    runAchvs();
-                });
+                runAchvs();
                 break;
             case "about":
-                Promise.resolve().then(() =>
-                {
-                    runAbout();
-                });
-                break;
-            case "404":
-                console.error("页面未找到");
+                runAbout();
                 break;
         }
     } catch (error)
