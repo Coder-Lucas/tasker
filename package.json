@@ -1,12 +1,11 @@
 {
     "name": "task-now",
-    "version": "0.0.0",
+    "version": "0.0.0-permanentl-unversioned",
     "description": "一个游戏化的事项管理器，可安装PWA，助你无痛养成好习惯！",
     "license": "MIT",
-    "private": false,
-    "main": "/fns/api.js",
+    "main": "/fns/index.js",
     "type": "module",
-    "homepage": "https://task-now.netlify.app/",
+    "homepage": "https://task-now.netlify.app",
     "repository": {
         "type": "git",
         "url": "https://github.com/Coder-Lucas/task-now.git"
@@ -14,8 +13,5 @@
     "engines": {
         "node": ">=22.0.0"
     },
-    "config": {
-        "port": 18888
-    },
-    "files": ["/"]
+    "private": true
 }

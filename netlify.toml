@@ -2,10 +2,15 @@
     command = "echo 'No build command needed.'"
     base = "/"
     publish = "/"
-
-[functions]
-    directory = "/functions"
+    functions = "/fns"
 
 [dev]
-    targetPort = 18888
+    port = 18888
+    targetPort = 28888
     autoLaunch = true
+
+[[redirects]]
+    from = "/api/*"
+    to = "/.netlify/functions/:splat"
+    status = 308
+    force = true
