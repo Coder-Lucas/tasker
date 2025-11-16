@@ -2,7 +2,7 @@
     command = "echo 'No build command needed.'"
     base = "/"
     publish = "/"
-    functions = "/fns"
+    functions = "/faas"
 
 [dev]
     port = 18888

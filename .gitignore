@@ -142,3 +142,4 @@ vite.config.ts.timestamp-*
 .netlify
 .idea
 deno.lock
+node_module

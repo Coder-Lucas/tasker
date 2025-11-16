@@ -10,13 +10,6 @@ import runGeneral from "/js/lib/general.js";
 {
     try
     {
-        runGeneral()
-    } catch (error)
-    {
-        console.error("出现未知错误 ", error);
-    }
-    try
-    {
         console.info("检测当前所在网页");
         switch (document.body.className)
         {
@@ -33,6 +26,13 @@ import runGeneral from "/js/lib/general.js";
                 runAbout();
                 break;
         }
+    } catch (error)
+    {
+        console.error("出现未知错误 ", error);
+    }
+    try
+    {
+        runGeneral()
     } catch (error)
     {
         console.error("出现未知错误 ", error);
