@@ -25,6 +25,9 @@ git clone https://github.com/Coder-Lucas/task-now.git
 
 ```bash
 # 请确保已安装npm并且在第一步的仓库根目录执行
+# 可改为npm install --no-optional
+# --no-optional会跳过开发工具的安装
+# 比如Netlify Dev
 npm install
 ```
 
